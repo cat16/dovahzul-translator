@@ -1,0 +1,83 @@
+{
+  "punctuation": [".", ",", ":"],
+  "dovahzul": {
+    "los": {
+      "before": {
+        "cases": {
+          "I": "am",
+          "you": "are",
+          "they": "are",
+          "we": "are"
+        },
+        "singular": "is",
+        "plural": "are",
+        "unknown": "to be"
+      }
+    },
+    "monah": {
+      "convType": {
+        "casual": "mom",
+        "formal": "mother"
+      }
+    }
+  },
+  "english": {
+    "am": "los",
+    "is": "los",
+    "are": "los",
+    "mom": "monah",
+    "mother": "monah"
+  },
+  "direct": [
+    { "english": "no", "dovahzul": "nid" },
+    { "english": "yes", "dovahzul": "geh" },
+    { "english": "not", "dovahzul": "ni" },
+    { "english": "I", "dovahzul": "zu" },
+    { "english": "you", "dovahzul": "hi" },
+    { "english": "he", "dovahzul": "rok" },
+    { "english": "she", "dovahzul": "rek" },
+    { "english": "they", "dovahzul": "nust" },
+    { "english": "we", "dovahzul": "mu" },
+    { "english": "kill", "dovahzul": "krii" },
+    { "english": "yourself", "dovahzul": "hinmaar" },
+    { "english": "more", "dovahzul": "zos" },
+    { "english": "word", "dovahzul": "rot", "plural": true },
+    { "english": "me", "dovahzul": "zey" },
+    { "english": "please", "dovahzul": "lig" },
+    { "english": "us", "dovahzul": "mii" },
+    { "english": "our", "dovahzul": "un" },
+    { "english": "your", "dovahzul": "hin" },
+    { "english": "gay", "dovahzul": "medliinvas" },
+    { "english": "bad", "dovahzul": "volzah" },
+    { "english": "speak", "dovahzul": "tinvaak" },
+    { "english": "some", "dovahzul": "osos" },
+    { "english": "dovahzul", "dovahzul": "dovahzul" },
+    { "english": "but", "dovahzul": "nuz" },
+    { "english": "much", "dovahzul": "pogaas" }
+  ],
+  "conversions": {
+    "english": {
+      "convType": [
+        { "formal": "am", "casual": "<'m", "if": { "before": ["I"] } },
+        {
+          "formal": "is",
+          "casual": "<'s",
+          "if": { "before": ["he", "she", "it"] }
+        },
+        {
+          "formal": "are",
+          "casual": "<'re",
+          "if": { "before": ["you", "they", "we"] }
+        }
+      ]
+    }
+  },
+  "plural": {
+    "english": {
+      "endsWith": ["s", "es"]
+    },
+    "dovahzul": {
+      "endsWith": ["`word.charAt(word.length-3)`e"]
+    }
+  }
+}
